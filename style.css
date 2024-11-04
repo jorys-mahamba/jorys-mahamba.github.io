@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #0055a4;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #003366;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Content Wrapper for Inline Layout */
+.content-wrapper {
+  display: flex;
+  border: none;
+}
+
+/* Profile Picture and Contact Information  */
+
+.inline-contact-box {
+  width: 275px;
+  background-color: transparent;
+  padding: 0rem;
+  box-sizing: border-box;
+  box-shadow: none;
+  border-radius: 8px;
+  text-align: center;
+  position: fixed;
+  top: calc(100px + 10rem); /* Adjusted top */
+  left: calc(50% - 550px + 2rem);  /* Adjusted left */
+}
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+/* Main Content Styling */
+#main-content {
+  margin-left: 280px; /* Width of aside (250px) + margin */
+  padding-top: 0px; /* Align text with the lowered box */
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #0055a4;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #003366;
+  margin-top: 1.5rem;
+}
+
+/* List Styling */
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #0055a4;
+}
+
+a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .inline-contact-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  #main-content {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
